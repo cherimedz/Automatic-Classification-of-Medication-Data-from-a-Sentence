@@ -5,4 +5,5 @@ nltk
 gensim
 numpy
 joblib
+scipy==1.10.1
 
