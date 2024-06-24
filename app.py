@@ -52,4 +52,4 @@ if st.button("Check"):
         predicted_class_label = labels[str(predicted_class)]
 
         
-        st.info(f"Predicted Sentiment: {predicted_class_label}")
+        st.info(f"Predicted Class of Comment: {predicted_class_label}")
