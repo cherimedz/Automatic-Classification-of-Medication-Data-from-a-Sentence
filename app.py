@@ -5,7 +5,10 @@ from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize
 import numpy as np
 import nltk
-
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Home", "About Us", "Contact Us"])
 
 nltk.download('punkt')
 
@@ -32,15 +35,16 @@ def document_vector(model, doc):
     if len(doc) == 0:
         return np.zeros(model.vector_size)
     return np.mean(model.wv[doc], axis=0)
+if page == "Home":
 
 
-st.title("Medication Classification")
+  st.title("Medication Classification")
 
 
-user_input = st.text_area('Enter your text here')
+  user_input = st.text_area('Enter your text here')
 
 
-if st.button("Check"):
+  if st.button("Check"):
     if user_input.strip() == "":
         st.warning("Please enter some text.")
     else:
@@ -53,3 +57,25 @@ if st.button("Check"):
 
         
         st.info(f"Predicted Class of Comment: {predicted_class_label}")
+elif page == "About Us":
+    st.title("About Us")
+    st.write("This is a NLP-based project that uses Word2Vec and Naive Bayes model.")
+elif page == "Contact Us":
+    st.title("Contact Us")
+    st.write("Hi! We are the team behind this project. Wanna know more? Please feel free to contact:")
+    st.write("Annapurna Padmanabhan")
+    st.markdown("[Github ](https://github.com/annapurna1702)")
+    st.markdown("[LinkedIn ](https://www.linkedin.com/in/annapurnapadmanabhan/)")
+    st.write("Sourikta Nag")
+    st.markdown("[Github ](https://www.example.com)")
+    st.markdown("[LinkedIn ](https://www.example.com)")
+    st.write("Mansi")
+    st.markdown("[Github ](https://www.example.com)")
+    st.markdown("[LinkedIn ](https://www.example.com)")
+    st.write("Medha Reju Pillai")
+    st.markdown("[Github ](https://www.example.com)")
+    st.markdown("[LinkedIn ](https://www.example.com)")
+    st.write("Anju B J")
+    st.markdown("[Github ](https://www.example.com)")
+    st.markdown("[LinkedIn ](https://www.example.com)")
+
