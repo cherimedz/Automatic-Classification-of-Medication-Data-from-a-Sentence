@@ -71,7 +71,7 @@ elif page == "Contact Us":
     st.markdown("[LinkedIn ](https://www.linkedin.com/in/sourikta-nag-200106235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
     st.write("Mansi")
     st.markdown("[Github ](https://github.com/MansiMalani)")
-    st.markdown("[LinkedIn ](https://www.linkedin.com/in/mansi-malani-b4b0b327b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")
+    st.markdown("[LinkedIn ](https://www.linkedin.com/in/mansi-malani-b4b0b327b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
     st.write("Medha Reju Pillai")
     st.markdown("[Github ](https://github.com/cherimedz)")
     st.markdown("[LinkedIn ](https://www.linkedin.com/in/medha-reju-pillai-42551b277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)")
